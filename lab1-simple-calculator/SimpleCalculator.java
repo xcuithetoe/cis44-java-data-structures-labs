@@ -35,7 +35,7 @@ public class SimpleCalculator {
                     }
                 }
                 
-                System.out.println("Screen: " + answer);
+                System.out.println("Display: " + answer);
 
             } else {
                 switch (input) {
