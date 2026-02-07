@@ -35,7 +35,7 @@ public class SimpleCalculator {
                     }
                 }
                 
-                System.out.println("Display: " + answer);
+                System.out.println("Display: "+ answer);
 
             } else {
                 switch (input) {
@@ -44,12 +44,12 @@ public class SimpleCalculator {
                     case "*":
                     case "/":
                         lastOperator = input;
-                        System.out.println("Display: " + answer); 
+                        System.out.println("Display: "+ answer); 
                         break;
                     case "=":
                         lastOperator = "+"; // go back to default 
                         afterNewOperator = true;
-                        System.out.println("Display: " + answer);
+                        System.out.println("Display: "+ answer);
                         break;
                 }
 

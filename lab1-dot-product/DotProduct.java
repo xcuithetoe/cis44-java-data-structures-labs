@@ -21,7 +21,7 @@ public class DotProduct {
         }
         
         System.out.println("Array a: "+ Arrays.toString(a));
-        System.out.println("Array b: " + Arrays.toString(b));
+        System.out.println("Array b: "+ Arrays.toString(b));
         System.out.println("Array c (Product): "+ Arrays.toString(c));
 
     }
