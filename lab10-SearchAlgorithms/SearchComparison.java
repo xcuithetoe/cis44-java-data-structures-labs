@@ -12,6 +12,7 @@ public class SearchComparison {
         // Loop through the array from index 0 to the end.
         for (int i = 0; i < arr.length; i++) {
             if(arr[i] == key) {
+                System.out.println("Counter: " + (i+1));
                 return i;
             }
         }
@@ -37,10 +38,11 @@ public class SearchComparison {
         // 2. If arr[mid] matches the key, return mid.
         // 3. If the key is less than arr[mid], update 'high'.
         // 4. If the key is greater than arr[mid], update 'low'.
-
+        int counter = 0; 
         while (low <= high) {
             int mid = (low+high)/2;
             if (arr[mid] == key) {
+                System.out.println("Counter: " + ++counter);
                 return mid;
             }
             else if (arr[mid] > key) {
@@ -48,6 +50,7 @@ public class SearchComparison {
             } else {
                 low = mid + 1;
             }
+            counter++;
         }
 
         return -1; // Return -1 if the loop finishes (low > high) without finding the key.
