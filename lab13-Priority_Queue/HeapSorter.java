@@ -28,8 +28,11 @@ class HeapPriorityQueue<K extends Comparable<K>> {
     public K removeMin() {
         if (isEmpty()) return null;
         K answer = heap.get(0);
+
         // Move last element to root
-        K last = heap.remove(heap.size() - 1);
+
+
+        K last = heap.remove( heap.size() - 1);
         if (!heap.isEmpty()) {
             heap.set(0, last);
             downheap(0);
@@ -43,25 +46,33 @@ class HeapPriorityQueue<K extends Comparable<K>> {
 
     private void upheap(int j) {
         // TODO: While j > 0 and parent > child, swap and move up
+
+
         while (j > 0 && heap.get(j).compareTo(heap.get(parent(j))) < 0) {
             swap(j, parent(j));
             j = parent(j);
+            
         }
     }
 
     private void downheap(int j) {
         // TODO: While j has left child...
+
         // Find smaller child, swap if child < parent, move down
         while (left(j) < heap.size()) {
+
             int leftIndex = left(j);
             int smallChildIndex = leftIndex;
             int rightIndex = right(j);
-            if (rightIndex < heap.size() && heap.get(rightIndex).compareTo(heap.get(leftIndex)) < 0) {
+
+            if (rightIndex < heap.size() && heap.get(rightIndex).compareTo(heap.get(leftIndex))< 0) {
                 smallChildIndex = rightIndex;
+
             }
             if (heap.get(smallChildIndex).compareTo(heap.get(j)) >= 0) {
                 break;
             }
+
             swap(j, smallChildIndex);
             j = smallChildIndex;
         }
@@ -78,7 +89,6 @@ public class HeapSorter {
         for (Integer x : arr) {
             pq.insert(x);
         }
-        
         // Phase 2: Remove (Sorting)
         for (int i = 0; i < arr.length; i++) {
             arr[i] = pq.removeMin();

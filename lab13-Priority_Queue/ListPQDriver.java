@@ -75,8 +75,10 @@ class SortedListPQ<K extends Comparable<K>, V> implements PriorityQueue<K, V> {
         MyEntry<K, V> newEntry = new MyEntry<>(key, value);
         // TODO: Find the correct insertion point to maintain sorted order by key (O(n))
         // Hint: Iterate and use list.add(index, newEntry) when list.get(index) > newEntry
-        for (int i = 0; i < list.size(); i++) {
-            if (list.get(i).compareTo(newEntry) > 0) {
+
+        for (int i = 0; i < list.size();i++) {
+
+            if (list.get(i).compareTo(newEntry) >0) {
                 list.add(i, newEntry);
                 return;
             }
