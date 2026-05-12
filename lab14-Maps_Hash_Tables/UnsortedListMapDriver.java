@@ -79,3 +79,20 @@ class UnsortedListMap<K, V> implements MapADT<K, V> {
         
     }
 }
+
+// main() function to verify core operations and get the console output screenshots.
+
+public class UnsortedListMapDriver {
+    public static void main(String[] args) {
+        UnsortedListMap<Integer, String> map = new UnsortedListMap<>();
+
+        System.out.println(map.put(5, "A"));  // output should be NULL
+        System.out.println(map.put(7, "B"));  // output should still be NULL
+        System.out.println(map.put(2, "C"));  // output should still be NULL
+        System.out.println(map.put(2, "E"));  // output should be "C"
+        System.out.println(map.get(7)); // output should be "B"
+        System.out.println(map.remove(5)); // output should be "A"
+
+
+    }
+}
