@@ -14,26 +14,17 @@ To build browser cache, I can choose between two data structures, HashMap combin
 ## 3. UML Diagram 
 ```mermaid
 classDiagram
-
-    class LRUCache {
-        -int capacity
-        -Map<Integer, Node> map
-        -Node head
-        -Node tail
-        +get(int key) int
-        +put(int key, int value) void
-        -remove(Node node) void
-        -addToHead(Node node) void
-
+    class SeparateChainingMap {
+        -Entry[] table
+        +put(int key, Node val)
+        +get(int key) Node
+        +remove(int key)
     }
-
     class Node {
-
         -int key
         -int value
         -Node prev
         -Node next
-
     }
 ```
 
