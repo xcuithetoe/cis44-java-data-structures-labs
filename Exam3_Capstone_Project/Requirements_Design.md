@@ -1,7 +1,5 @@
 # Design Requirements - Xiangtuo Cui
 
-**GitHub Repository:** [https://github.com/xcuithetoe/cis44-java-data-structures-labs](https://github.com/xcuithetoe/cis44-java-data-structures-labs)
-
 ## 1. Why did I choose Option C?
 "Try clearing your cache" is an oft-spoken phrase anytime a website doesn't load. But currently, I don't really know what browser cache is and how it works. Option C can teach me.
 
