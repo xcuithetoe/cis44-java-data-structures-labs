@@ -3,7 +3,7 @@
 **GitHub Repository:** [https://github.com/xcuithetoe/cis44-java-data-structures-labs](https://github.com/xcuithetoe/cis44-java-data-structures-labs)
 
 ## 1. Why did I choose Option C?
-"Try clearing your cache" is an oft-spoken phrase anytime a website doesn't load. But currently, I don't really know what browser cache is and how it works. Option C can teach me how to build browser cache.
+"Try clearing your cache" is an oft-spoken phrase anytime a website doesn't load. But currently, I don't really know what browser cache is and how it works. Option C can teach me.
 
 ## 2. Analysis of the Problem
 The purpose of cache is to quickly retrieve website data. Hence, my implementation of cache has two requirements:
